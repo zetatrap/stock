@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Stock</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Stock</h1>
+        <div class="stock-form">
+            <input type="text" id="productName" placeholder="Nombre del producto">
+            <input type="number" id="productQuantity" placeholder="Cantidad">
+            <button onclick="addProduct()">Agregar Producto</button>
+        </div>
+        <div class="stock-list">
+            <h2>Inventario</h2>
+            <ul id="productList"></ul>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
